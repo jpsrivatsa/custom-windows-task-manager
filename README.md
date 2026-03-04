@@ -10,17 +10,6 @@ Features:
  *   - Restart Process with new process ID
  *   - Detailed process info: owner, priority, handles, PEB address
  *
- * Build (Developer Command Prompt / MSVC):
- *   cl /EHsc /O2 /std:c++17 task_manager_win.cpp ^
- *      /link pdh.lib psapi.lib ntdll.lib dxgi.lib ole32.lib
- *
- * Build (MinGW / g++):
- *   g++ -O2 -std=c++17 -o taskman task_manager_win.cpp ^
- *       -lpdh -lpsapi -lntdll -ldxgi -lole32
- *
- * Run (elevated for full access):
- *   taskman.exe                     (run as Administrator for best results)
- *
  * Commands:
  *   list                            refresh process list
  *   info   <pid>                    detailed process info + owner
@@ -36,3 +25,5 @@ Features:
  *   help                            show this list
  *   quit / exit                     exit
  */
+
+Run the run.exe to test it
